@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="with=device-width;initial-scale=1.0">
+                    <meta name="description"content="le police en css">
+                    <link rel="stylesheet" href="ASSETS/CSS/reset.css">
+                    <link rel="stylesheet" href="ASSETS/CSS/style.css">
+
+                        <title>groupe 4</title>
+        </head>
+        <body>
+            <form action="send.php" method="post">
+                <fieldset>
+                    <legend>Legende du formulaire</legend>
+                    <label for="identifiant">Identifiant</label>
+                    <input type="text" id="identifiant" name="identifiant" required placeholder="Entrer votre idantifiant">
+                    <br><br>
+                    <label for="mdp">Mot de passe</label>
+                    <input type="password" name="mdp" id="mdp" requiredn placeholder="tapeez votre mot de passe">
+                    <br><br>
+                    <label for="confpassword">Confirmation du mot de passe</label>
+                    <input type="password" name="confpassword" id="confpassword" required placeholder="re tapez votre mot de passe">
+                    <br><br>
+                    <label for="mail">Votre email</label>
+                    <input type="email" name="mail" id="mail" required placeholder="Entrer votre adresse mail">
+                    <br><br>
+                    <input type="checkbox" name="croix" id="croix">
+                    <label for="croix">J'aime cocher des cases !!</label>
+                    <br>
+                    <p>J'aime aussi :</p>
+                    <input type="radio" name="choix" id="Lespangolins" value="Lespangolins">
+                    <label for="Lespangolins">Les pangolins</label>
+                    <input type="radio" name="choix" id="Leschats" value="Leschats">
+                    <label for="Leschats">Les chats</label>
+                    <input type="radio" name="choix" id="Lesescargots" value="Lesescargots">
+                    <label for="Lesescargots">Les escargots (en persillades)</label>
+                    <input type="radio" name="choix" id="Lesbananes" value="Lesbananes">
+                    <label for="Lesbananes">Les bananes</label>
+                    <br><br>
+                    <label for="selectiondechant">Je préfère chanter dans la/le/les:</label>
+                    <select name="selectiondechant" id="selectiondechant">
+                        <option value="Voiture">Voiture</option>
+                        <option value="Chambre">Chambre</option>
+                        <option value="Douche">Douche</option>
+                        <optgroup label="ou alors :">
+                            <option value="Toilette">Toilette</option>
+                            <option value="Cave">Cave</option>
+                        </optgroup>
+                    </select>
+                 </fieldset>
+                 <br>
+         
+            <form action="send.php" method="post">
+                <fieldset>
+                    <legend>Les petits plus du formulaire</legend>
+                    <label for="Zone de texte">Zone de texte</label><br>
+                    <textarea name="text" id="" >tapez votre texte ici</textarea>
+                    <br>
+                    <br>
+                    <label for="url">Permet d'entrer une URL</label>
+                    <input type="url" name="url" id="url" required>
+                    <br>
+                    <br>
+                    <label for="téléphone">Permet d'entrer un numero de téléphone</label>
+                    <input type="tel" name="tel" id="tel" required>
+                    <br>
+                    <br>
+                    <label for="numero">Permet d'entrer un nombre entier</label>
+                    <input type="number" step=1>
+                    <br>
+                    <br>
+                    <label for="range">Permet d'afficher un curseur</label>
+                    <input type="range" name="curseur" id="curseur">
+                    <br>
+                    <br>
+                    <label for="color">Permet de selectionner une couleur</label>
+                    <input type="color" name="couleur" id="couleur">
+                    <br>
+                    <br>
+                    <label for="date">Permet d'entrer une date</label>
+                    <input type="date" name="date" id="date">
+                    <br>
+                    <br>
+                    <label for="time">Permet d'entrer une heure</label>
+                    <input type="time" name="heure" id="heure">
+                    <br>
+                    <br>
+                    <label for="week">Permet d'entrer la semaine</label>
+                    <input type="week" name="semaine" id="semaine">
+                    <br>
+                    <br>
+                    <label for="month">Permet d'entrer le mois</label>
+                    <input type="month" name="mois" id="mois">
+                    <br>
+                    <br>
+                    <input type="submit" value="Envoyer le formulaire">
+                    <br>
+                    <br>
+                 </fieldset>
+                 <br>
+                </form> 
+                 <fieldset>
+                    <legend>Formulaire de recherche</legend>
+                    <input type="search" name="search" id="search">
+                    <input type="submit" value="Rechercher">
+                </fieldset>
+            </form>  
+
+
+        </body>
+    </html>
